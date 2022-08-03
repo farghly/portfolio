@@ -12,7 +12,67 @@ $txt-color:white;
 *{
     margin: 0 auto;
 }
+/* make custom scroll */
+body {
+    position: absolute;
+    height:1200px;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/* mozilla */
+
+::-moz-scrollbar {
+    width: 12px;
+}
+ 
+::-moz-scrollbar-track {
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+::-moz-scrollbar-thumb {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-moz-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/* end of make custom scroll */
+
+/* start of loader */
 .load-container{
     position: fixed;
     top: 0;
@@ -54,3 +114,4 @@ $txt-color:white;
         transform: rotate(360deg)
     }
 }
+/* end of loader */
